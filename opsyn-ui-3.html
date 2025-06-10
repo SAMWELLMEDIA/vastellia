@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OPSYN UI - HTML</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+:root {
+  --bg-color: #020f08;
+  --text-color: #f0f0f0;
+  --accent-color: #f0f0f0;;
+  --card-bg: #09291f;
+  --card-hover: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 15px 20px;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.action-buttons a {
+  background-color: var(--accent-color);
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.action-buttons a:hover {
+  background-color: #198148;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-title, .card strong {
+  display: block;
+  padding: 15px;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #333;
+  padding: 10px 0;
+}
+.tab-bar a {
+  color: #bbb;
+  text-align: center;
+  text-decoration: none;
+  flex: 1;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.tab-bar a i {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.tab-bar a.active, .tab-bar a:hover {
+  color: var(--accent-color);
+}
+
+.card strong {
+  color: var(--accent-color);
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  padding: 0 15px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\LOGO3.jpeg" class="logo" alt="logo">
+  <div class="dark-mode-toggle">
+    <i class="fa fa-bell"></i>
+    <button class="toggle-btn" id="themeToggle">
+      <i class="fa fa-moon"></i>
+    </button>
+  </div>
+</header>
+
+<div class="action-buttons">
+  <a href="get-started-ops.html">Register Now</a>
+  <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i">Learn More</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\differences.jpeg" alt="Experience">
+    <strong>ETHEREAL EARNING STRUCTURE</strong>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\starterplan.jpeg" alt="Starter Plan">
+    <div class="card-title">
+      <strong>VASTELLIA WEB WORK:</strong>
+      <p>Subscription Fee: $8.5/N8500</p>
+      <p>Instant Cash back: $10/N10000</p>
+      <p>Sales bonus: $7.5/N7500</p>
+      <p>CashQuest: $1/N1000 (daily)</p>
+      <p>SurveyQuest: $0.5/N500 Per Survey </p>
+      <p>Overflow level 1: $0.2/N200</p>
+      <p>Overflow level 2: $0.1/N100</p>
+      <p>INCENTIVES FULLY GUARANTEED</p>
+      <p>SWIFT PAYMENT</p>
+      <p>CASHBACK FULLY WITHDRAWAL ANYTIME</p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\premiumplan.jpeg" alt="Premium Plan">
+    <div class="card-title">
+      <strong>VASTELLIA WEB WORK X:</strong>
+      <p>Subscription Fee: $15.5/N15,500</p>
+      <p>Instant Cash back: $20/N20000</p>
+      <p>Sales bonus: $12/N12,000</p>
+      <p>CashQuest:  $1/N1000 (daily)</p>
+      <p>SurveyQuest: $0.5/N500 Per Survey </p>
+      <p>CHAT2EARN (Daily Automated Per Chat Sales with Foreigners): $2/N2000</p>
+      <p>Overflow level 1: $0.4/N400</p>
+      <p>Overflow level 2: $0.1/N100</p>
+      <p>INCENTIVES FULLY GUARANTEED</p>
+      <p>SWIFT PAYMENT</p>
+      <p>FREE AI POWERED ASSISTANCE</p>
+      <p>CASHBACK FULLY WITHDRAWAL ANYTIME</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\whytochooseus.jpeg" alt="Differences">
+    <strong>REASONS TO CHOOSE VISTELLIA OVER OTHER COMPANIES</strong>
+  </div>
+
+  <div class="card">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\othercountries2.jpeg" alt="Multinational">
+    <strong>VISTELLIA IS MULTINATIONAL</strong>
+    <strong>Ghana</strong>: Ethereal X - 215GHS | Ethereal - 170GHS</p>
+    <br><strong>Cameroon</strong></br>: Ethereal X - XAF 9,000 | Ethereal - XAF 14,000</p>
+   <br><strong>Uganda</strong></br>: Ethereal X - 76,000 UGX | Ethereal - 52,000 UGX</p>
+    <br><strong> Tazania</strong></br>(Ethereal X) - 58,000 shilling | (Ethereal)- 42,000 shilling
+<br><strong> Botswana</strong></br>(Ethereal X) - 310,000 shilling | (Ethereal)- 230,000 shilling
+<br><strong> Kenya</strong></br>(Ethereal X) - 215GHS | (Ethereal)- 170GHS 
+<br><strong>South Africa</strong> </br>(Ethereal X) - 380 ZAR | (Ethereal)- 280 ZAR 
+<br><strong>Sierra Leone</strong></br>(Ethereal X) - 215GHS | (Ethereal)- 170GHS
+<br><strong>Ivory Coast | Togo  | Benin  | Mali </strong>  </br>(Ethereal X) - 14,000XOF| (Ethereal)- 9,000XOF
+<br><strong> | Burkina Faso | Guinea-Bissau | Niger</strong></br>(Ethereal X) - 14,000XOF | (Ethereal)- 9,000XOF 
+<br><strong>Senegal</strong> </br>(Ethereal X) - 215GHS | (Ethereal)- 170GHS 
+ <br><strong>Gambia</strong></br>(Ethereal X) - 2,200 GMD| (Ethereal)- 1,600 GMD 
+ <br><strong>Zimbabwe</strong></br>(Ethereal X) - $29| (Ethereal)- $25
+ <br><strong>Liberia</strong></br>(Ethereal X) - 215GHS | (Ethereal)- 170GHS
+ <br><strong>Zambia</strong></br>(Ethereal X) - 620 Zambian Kwacha | (Ethereal)-  450 Zambian Kwacha
+ <br><strong> Malawi | Rwanda |  Mozambique </strong></br>(Ethereal X) - 215GHS | (Ethereal)- 170GHS
+ <br><strong>Namibia</strong></br>(Ethereal X) - 670 NAD | (Ethereal)- 630 NAD
+  </div>
+  
+<div class="action-buttons">
+  <a href="get-started-ops.html">SignUp Now</a>
+  <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i">Learn More</a>
+</div>
+</div>
+<br>
+</br>
+<br>
+</br>
+
+<nav class="tab-bar">
+  <a href="index.html"><i class="fa fa-home"></i>Home</a>
+  <a href="opsyn-ui-2.html"><i class="fa fa-star"></i>Features</a>
+  <a href="opsyn-ui-3.html" class="active"><i class="fa fa-coins"></i>Earnings</a>
+</nav>
+
+<script>
+  const toggleBtn = document.getElementById('themeToggle');
+  let isDark = true;
+  toggleBtn.addEventListener('click', () => {
+    isDark = !isDark;
+    document.body.style.backgroundColor = isDark ? '#020f08' : '#f0f0f0';
+    document.body.style.color = isDark ? 'white' : '#111';
+    toggleBtn.innerHTML = isDark
+      ? '<i class="fa fa-moon"></i>'
+      : '<i class="fa fa-sun"></i>';
+  });
+</script>
+
+</body>
+</html>

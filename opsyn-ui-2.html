@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPSYN UI - HTML</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #020f08;
+      --text-color: white;
+      --accent-color: orange;
+    }
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-color);
+      padding: 10px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .logo {
+      height: 50px;
+    }
+     
+    .logo{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .toggle-btn {
+      background: none;
+      border: none;
+      font-size: 1.4em;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+    .card {
+      background: #09291f;
+      border-radius: 15px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card p {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .action-buttons a {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .action-buttons :hover{
+       background-color: rgba(0, 100, 0, 0.8) ;
+       color: white;
+    }
+
+    .tab-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #020f08;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #333;
+    }
+    .tab-bar a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .tab-bar i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .tab-bar a.active {
+      color: var(--accent-color);
+    }
+    .dark-mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\LOGO3.jpeg" alt="Logo" class="logo" />
+    <div class="dark-mode-toggle">
+      <i class="fa fa-bell"></i>
+      <button class="toggle-btn" id="themeToggle">
+        <i class="fa fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\brandRevoloution.jpeg" alt="Experience" />
+      <div class="action-buttons">
+        <a href="https://t.me/+ycsTF4VjbXAzYWE0">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\makemillions.jpeg" alt="Opsyn" />
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\buydata.jpeg" alt="INTRODUCING VTU HUB ON VASTELLIA"/>
+      <strong>INTRODUCING VTU HUB ON VASTELLIA</strong>
+<p>With the VTU HUB on Vastellia, you can now purchase Data and Airtime at unbelievably cheaper rates, without any stress, and receive  it instantly. No more breaking the bank just to stay connected! Vastellia brings you a smarter, faster, and more affordable way to manage your bills — and the best part? It's absolutely FREE to use!</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\crypto.jpeg" />
+      <strong>VASTELLIA CRYPTOCURRENCY EXCHANGE</strong>
+
+<p>With this Web3 Feature on Vastellia, you can easily convert your digital assets e.g USDT or any Cryptocurrency into Naira and withdraw the funds at any time, without the risk of falling for scam crypto vendors.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\chat2earn.jpeg" />
+      <strong>THE GREATEST CHAT2EARN FEATURE ON VASTELLIA</strong>
+
+<p>CHAT2EARN is a brand-new unique integrated feature on Vastellia that allows users to earn real cash simply by engaging in conversations with others. Whether you're providing helpful information, answering questions, or just having friendly conversations and also CHATTING WITH FOREIGNERS , you can earn $2 for every active chat you participate in.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\quest.jpeg" />
+      <strong>THE SURVEYQUEST FEATURE ON VASTELLIA
+</strong><p>SurveyQuest brings together the power of market research and the rewarding experience of earning real money. By answering simple survey questions, users can earn $0.5/N500 for each survey completed within the Vastellia ecosystem and also get paid instantly.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\mostbeutiful.jpeg" />
+      
+
+<p>Vastellia is offering a startup capital opportunity to entrepreneurs. To win ₦100,000, users need to:
+
+1. Create a 1-minute video showcasing their business idea.
+2. Tag Vastellia's TikTok handle (@officialvastellia) with #Vastellia.
+3. End the video with reasons why people should join Vastellia.
+
+The video with the best idea will be selected and credited with the startup capital. The goal is to empower entrepreneurs and promote independence.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\mosthandsome.jpeg" />
+
+<p>Vastellia is hosting a male beauty contest with cash prizes:
+- 1st prize: $30
+- 2nd prize: $20
+
+To participate, contestants need to:
+1. Register with a $1 fee
+2. Submit their full name, TikTok handle, and picture
+3. The picture will be uploaded to a template and reposted on Vastellia's TikTok and Facebook groups
+4. The contestant with the most likes on their picture wins</p>
+    </div>
+
+    <div class="card">
+      <img src="images/boost.jpeg" />
+      
+
+<p>With Vastellia’s AI-Powered System, your gateway to a smarter, faster, and more rewarding digital experience.
+Chat. Connect. Earn. It’s that simple!
+
+With our advanced CHAT2EARN technology, every interaction becomes a golden opportunity.
+Say goodbye to traditional systems — and hello to a world where your time and conversations pay off in real value.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\compesation.jpeg" />
+    
+
+<p>If your goal is to achieve wealth and gain exceptional value with unrestricted earnings, Vastellia is a necessity, not just an option. The only reason to miss out on Vastellia is if you're not interested in making money or accessing unmatched value.</p>
+    </div>
+
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\supportservices.jpeg" />
+      <strong>24/7 CUSTOMER SUPPORT</strong>
+        <p>If your goal is to achieve wealth and gain exceptional value with unrestricted earnings, Vastellia is a necessity, not just an option. The only reason to miss out on Vastellia is if you're not interested in making money or accessing unmatched value.</p>
+    </div>
+    <div class="card">
+      <img src="C:\Users\USER\Desktop\coding\HTML course\connect.php\Images\500instant.jpeg" />
+      <strong>GET PAID FOR EVERY SURVEY ON VASTELLIA</strong>
+    </div>
+    <div class="action-buttons">
+      <a href="opsyn-ui-3.html">Get Started</a>
+      <a href="https://whatsapp.com/channel/0029Vaqzr6eCcW4r7fxe5A3i">Learn More</a>
+    </div>
+
+    <div class="action-buttons">
+      <a href="https://t.me/SAMWELLMEDIA?text=Hello+Opsyn+Agent+im+ready+to+enroll+for+OPSYN+registration">Telegram</a>
+      <a href="https://wa.me/2348134513137?text=Hello+Opsyn+Agent+i’m+ready+to+enroll+for+OPSYN+registration">WhatsApp</a>
+    </div>
+    
+  </main>
+
+  <nav class="tab-bar">
+    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+    <a href="opsyn-ui-2.html" class="active"><i class="fa fa-star"></i>Features</a>
+    <a href="opsyn-ui-3.html"><i class="fa fa-coins"></i>Earnings</a>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    let isDark = true;
+    toggleBtn.addEventListener('click', () => {
+      isDark = !isDark;
+      document.body.style.backgroundColor = isDark ? '#020f08' : '#f0f0f0';
+      document.body.style.color = isDark ? 'white' : '#111';
+      toggleBtn.innerHTML = isDark
+        ? '<i class="fa fa-moon"></i>'
+        : '<i class="fa fa-sun"></i>';
+    });
+  </script>
+  </script>
+</body>
+</html>
